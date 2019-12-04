@@ -14,7 +14,7 @@
   #menu-js-btn {}
   #menu-study {}
   #menu-study-btn {}
-  #menu-contact {}
+  #menu-contact {display: block; position: absolute; left: 20px; bottom: 20px;}
   #menu-contact-btn {}
   
   #head-r {display: block; position: fixed; top: 0; right: 0; width: 50vw; height: 100vh; background-color: #f99;}
