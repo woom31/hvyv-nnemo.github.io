@@ -2,7 +2,7 @@
 @media screen and (min-width: 1280px){
   header {display: block; width: 300px; height: 100vh; background-color: #ff9;}
   #head {}
-  #head-logo {}
+  #head-logo {display: block; width: 200px; height: 120px; background-color: #fff; font-size: 20px;}
   #head-menu {}
   #menu-about {}
   #menu-about-btn {}
