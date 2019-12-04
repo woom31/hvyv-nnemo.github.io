@@ -17,5 +17,5 @@
   #menu-contact {}
   #menu-contact-btn {}
   
-  #head-r {display: block; position: absolute; top: 0; right: 0; width: 50vw; height: 100vh; background-color: #f99;}
+  #head-r {display: block; position: fixed; top: 0; right: 0; width: 50vw; height: 100vh; background-color: #f99;}
 }
