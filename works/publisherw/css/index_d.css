@@ -19,18 +19,18 @@
   
   #head-r {display: block; position: fixed; top: 0; right: 0; width: 50vw; height: 100vh; background-color: #f99;}
   #main-menu {display: block; width: 100%; height: 100%;}
-  #main-about {display: block; width: 100%; height: 20%; background-color: #99f; text-align: center;}
+  #main-about {display: block; position: relative; width: 100%; height: 20%; background-color: #99f; text-align: center;}
   #main-about-btn {display: block; width: 100%; height: 100%;}
-  #main-html {display: block; width: 100%; height: 20%; background-color: #9f9; text-align: center;}
+  #main-html {display: block; position: relative; width: 100%; height: 20%; background-color: #9f9; text-align: center;}
   #main-html-btn {display: block; width: 100%; height: 100%;}
-  #main-css {display: block; width: 100%; height: 20%; background-color: #9ff; text-align: center;}
+  #main-css {display: block; position: relative; width: 100%; height: 20%; background-color: #9ff; text-align: center;}
   #main-css-btn {display: block; width: 100%; height: 100%;}
-  #main-js {display: block; width: 100%; height: 20%; background-color: #f9f; text-align: center;}
+  #main-js {display: block; position: relative; width: 100%; height: 20%; background-color: #f9f; text-align: center;}
   #main-js-btn {display: block; width: 100%; height: 100%;}
-  #main-study {display: block; width: 100%; height: 20%; background-color: #ff9; text-align: center;}
+  #main-study {display: block; position: relative; width: 100%; height: 20%; background-color: #ff9; text-align: center;}
   #main-study-btn {display: block; width: 100%; height: 100%;}
-  .btn-title {font-size: 32px; font-weight: bold; width: 100%; height: 50%; line-height: 16vh; color: #fff; z-index: 1;}
-  .btn-sub {font-size: 12px; width: 100%; height: 50%; line-height: 7vh; color: #fff; z-index: 1;}
+  .btn-title {font-size: 32px; font-weight: bold; width: 100%; height: 50%; line-height: 16vh; color: #fff;}
+  .btn-sub {font-size: 12px; width: 100%; height: 50%; line-height: 7vh; color: #fff;}
   .btn-title span.btn-img {display: inline-block; width: 36px; height: 36px; margin-bottom: -6px; margin-right: 10px; background-color: #000;}
   .btn-title span.btn-title {}
   .black-bg {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.3;}
