@@ -4,4 +4,4 @@ $(document).ready(function(){
     $('#head-l').stop().animate({'width': '300px'});
   })
 
-}
+})
