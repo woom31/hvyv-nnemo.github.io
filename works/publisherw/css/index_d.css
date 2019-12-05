@@ -33,5 +33,5 @@
   .btn-sub {font-size: 12px; width: 100%; height: 50%; line-height: 7vh;}
   .btn-title span.btn-img {display: inline-block; width: 36px; height: 36px; margin-bottom: -6px; margin-right: 10px; background-color: #000;}
   .btn-title span.btn-title {}
-  .black-bg {background-color: #000; opacity: 0.3;}
+  .black-bg {display: block; width: 100%; height: 100%; background-color: #000; opacity: 0.3;}
 }
