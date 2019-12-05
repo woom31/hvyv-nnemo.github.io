@@ -29,8 +29,8 @@
   #main-js-btn {display: block; width: 100%; height: 100%;}
   #main-study {display: block; width: 100%; height: 20%; background-color: #ff9; text-align: center;}
   #main-study-btn {display: block; width: 100%; height: 100%;}
-  .btn-title {font-size: 32px; font-weight: bold; width: 100%; height: 50%; line-height: 16vh;}
-  .btn-sub {font-size: 12px; width: 100%; height: 50%; line-height: 7vh;}
+  .btn-title {font-size: 32px; font-weight: bold; width: 100%; height: 50%; line-height: 16vh; color: #fff;}
+  .btn-sub {font-size: 12px; width: 100%; height: 50%; line-height: 7vh; color: #fff;}
   .btn-title span.btn-img {display: inline-block; width: 36px; height: 36px; margin-bottom: -6px; margin-right: 10px; background-color: #000;}
   .btn-title span.btn-title {}
   .black-bg {display: block; width: 100%; height: 100%; background-color: #000; opacity: 0.3;}
