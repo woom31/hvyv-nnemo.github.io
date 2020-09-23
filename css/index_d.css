@@ -1,0 +1,74 @@
+/* DESKTOP*/
+
+body {display: block; overflow: hidden;}
+
+.header {width: 100%;}
+
+.content {width: 100%; background-color: #000; text-align: center; }
+.app_screen {display: inline-block;  }
+.app_base {display: block; position: relative;  top: 0; overflow: hidden;}
+.base {display: block; position: relative; width: 100%; height: 100%;}
+.base_img {height: 100vh;}
+
+.main_base {display: block; position: absolute; width:100%; height: 100%;  top: 0; z-index: 10;}
+.main_img {width: 100%;}
+.main_search_input {display: block; position: absolute; top: 3.6vh; left: 3%; width: 70%; height: 5.8vh; background: rgba(255, 0, 0, 0.500);}
+
+.search_base {display: block; position: absolute; width:100%; height: 100%; top: 0; left: 0; z-index: 9; }
+.search_top {width: 100%; display: block; position: absolute; top: -10%;}
+.search_top_img {width: 100%; display: block; }
+.search_search_input {display: block; position: absolute; top: 3.6vh; left: 12.5%; width: 74%; height: 5.8vh; background: rgba(255, 0, 0, 0.500);}
+.search_top .back_btn {display: block; position: absolute; top: 3.6vh; left: 3%; width: 9%; height: 5.8vh; background: rgba(255, 0, 0, 0.500);}
+.search_list_div {width: 100%; display: block; position: absolute; bottom: -90%;}
+.search_list {width: 100%; display: block; }
+.search_list_img {width: 100%; display: block; }
+.search_sel_btn {display: block; position: absolute; top: 22vh; left: 0; width: 100%; height: 8.6vh; background: rgba(255, 0, 0, 0.500);}
+
+.result_base {display: block; position: absolute; width:100%; height: 100%; top: 0; left: 0; z-index: 8; }
+.search_result {display: block;}
+.result_img {width: 100%;}
+.search_result .back_btn {display: block; position: absolute; top: 3.6vh; left: 3%; width: 9%; height: 5.8vh; background: rgba(255, 0, 0, 0.500);}
+.result_sel_btn {display: block; position: absolute; top: 10.2vh; left: 0; width: 100%; height: 8vh; background: rgba(255, 0, 0, 0.500);}
+
+.result_map_base {display: block; position: absolute; width:100%; height: 100%; top: 0; left: 0; z-index: 7; }
+.result_map {display: block;}
+.result_map_img {width: 100%;}
+.result_map .back_btn {display: block; position: absolute; top: 3.6vh; left: 3%; width: 9%; height: 5.8vh; background: rgba(255, 0, 0, 0.500);}
+.result_map_sel_btn {display: block; position: absolute; bottom: 2.5vh; left: 5%; width: 19%; height: 4.5vh; background: rgba(255, 0, 0, 0.500);}
+
+.navi_base {display: block; position: absolute; width:100%; height: 100%; top: 0; left: 0; z-index: 6; }
+.navi_top {width: 100%; display: block; position: absolute; top: 0;}
+.navi_top_img {width: 100%; display: block;}
+.navi_top .back_btn {display: block; position: absolute; top: 3.7vh; left: 2.3%; width: 9%; height: 5vh; background: rgba(255, 0, 0, 0.500);}
+.navi_list {width: 100%; display: block; position: absolute; bottom: -67%;}
+.navi_list_img {width: 100%; display: block;}
+.navi_sel_btn {display: block; position: absolute; top: 4.2vh; left: 0%; width: 100%; height: 11vh; background: rgba(255, 0, 0, 0.500);}
+
+.detail_base {display: block; position: absolute; width:100%; height: 100%; top: 0; left: 0; z-index: 5; }
+.detail_top {width: 100%; display: block; position: absolute; top: 0;}
+.detail_top_img {width: 100%; display: block;}
+.detail_top .back_btn {display: block; position: absolute; top: 3.7vh; left: 2.3%; width: 12%; height: 6%; background-color: rgba(255, 0, 0, 0.500); background-image: url(../img/6_back.png); background-repeat: none; background-size: contain;}
+.detail_list {width: 100%; display: block; position: absolute; bottom: -58%;}
+.detail_list_img {width: 100%; display: block;}
+.detail_hide_btn {display: block; position: absolute; top: 0.5vh; left: 45%; width: 10%; height: 1.5vh; background: rgba(255, 0, 0, 0.500);}
+.gotopay_btn {font-size: 13px; display: block; position: absolute; top: 28vh; right: 4%; width: 23%; height: 5vh; line-height: 5vh; background: rgba(255, 0, 0, 0.500);}
+.detail_footer {width: 100%; display: block; position: absolute; bottom: 0;}
+.detail_footer_img {width: 100%; display: block;}
+
+
+
+.white_bar {display: block; position: absolute; width:100%; top: -1%; z-index: 20;}
+.top_bar {width: 100%;}
+
+.footer {width: 100%;}
+
+
+
+
+.payload {background-color: #fff; text-align: center; display: block; position: absolute; width:100%; height: 100%; top: 0; left: 0;}
+.payloading {display: block; position: absolute; width: 30%; top: 45%; left: 50%; transform: translate(-50%, -50%);}
+.paynotice {display: block; width: 100%; position: absolute; top: 52%;}
+
+.qr_base {display: block; position: absolute; width:100%; height: 100%; top: 0; left: 100%;}
+.qr_ticket {width: 100%; display: block;}
+.qr_cancel {display: block; position: absolute; width: 26%; height: 4vh; background-color: rgba(0, 0, 0, 0.178); bottom: 4vh; left: 37%;}
