@@ -69,4 +69,14 @@ $(document).ready(function(){
         $('.detail_list').stop().animate({'bottom':'-58%'}, 200);
     });
 
+    $('.gotopay_btn').on('click', function(){
+        $('.paypopup_base').css("z-index", "16");
+        
+    });
+
+    $('.gotodetail').on('click', function(){
+        $('.paypopup_base').css("z-index", "4");
+        
+    });
+
 });
