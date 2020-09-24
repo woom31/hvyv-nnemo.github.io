@@ -55,6 +55,12 @@ body {display: block; overflow: hidden;}
 .detail_footer {width: 100%; display: block; position: absolute; bottom: 0;}
 .detail_footer_img {width: 100%; display: block;}
 
+.paypopup_base {display: block; position: absolute; width:100%; height: 100%; top: 0; left: 0; z-index: 4; }
+.blackout {display: block; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.500);}
+.paypopup {display: block; position: absolute; width: 70%; left: 15%; top: 50%; transform: translate(0, -50%);}
+.paypopup_img {width:100%; display: block;}
+.realgotopay {display: block; width: 50%; height: 20%; position: absolute; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2);}
+.gotodetail {display: block; width: 50%; height: 20%; position: absolute; left: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.2);}
 
 
 .white_bar {display: block; position: absolute; width:100%; top: -1%; z-index: 20;}
