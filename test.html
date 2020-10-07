@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>구글 지도 :: 해외 교통카드 결제 플로우</title>
+    <!-- 파비콘 -->
+    <!-- <link href="./img/favicon.ico" rel="shortcut icon"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/index_d.css">    
+    <!-- <link rel="stylesheet" href="./css/index_v.css">    
+    <link rel="stylesheet" href="./css/index_h.css">    -->
+    <link rel="stylesheet" href="./css/index_m.css">     
+    <!--script-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRLpH26WVqfrSG0CNG9nq_FkPwGkbGHI0&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+    <!-- Jquery -->
+    <script type="text/javascript" src="./js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/libs/slick.min.js"></script>
+</head>
+<body>
+  <div id="desktopNotice">
+    <!-- <p>본 페이지는 모바일 환경으로 최대한 맞추어 제작되었습니다.<br>
+    데스크탑 웹의 경우, 페이지 넓이를 줄여 모바일과 비슷한 환경으로 만들어주세요!</p> -->
+    <embed width="100%" height="100%" src="https://xd.adobe.com/view/a8c6413a-646a-4d7c-a451-9f75ed5d8d70-fd95/?fullscreen&hints=off">
+      
+    </embed>
+  </div>
+    <!-- HEADER START -->
+    <!-- <div id="header">
+        
+    </div> -->
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div id="content">
+      <div id="main-div">
+        <!--검색-->
+        <div class="pac-card" id="pac-card">
+          <div>
+            <!-- <div id="type-selector" class="pac-controls">
+              <input
+                type="radio"
+                name="type"
+                id="changetype-all"
+                checked="checked"
+              />
+              <label for="changetype-all">All</label>
+    
+              <input type="radio" name="type" id="changetype-establishment" />
+              <label for="changetype-establishment">Establishments</label>
+    
+              <input type="radio" name="type" id="changetype-address" />
+              <label for="changetype-address">Addresses</label>
+    
+              <input type="radio" name="type" id="changetype-geocode" />
+              <label for="changetype-geocode">Geocodes</label>
+            </div>
+            <div id="strict-bounds-selector" class="pac-controls">
+              <input type="checkbox" id="use-strict-bounds" value="" />
+              <label for="use-strict-bounds">Strict Bounds</label>
+            </div> -->
+          </div>
+          <div id="pac-container">
+            <div id="icon-con">
+              <div class="icon-btn"><img src="img/googleMapIcon.png"></div>
+              <div class="back-btn"><img src="img/arrow_back-black-18dp.svg"></div>
+            </div>
+            <input id="pac-input" type="text" placeholder="여기서 검색">
+          </div>
+        </div>
+        <!--검색-->
+        <!--지도-->
+        <div id="map"></div>
+        <!--지도-->
+        <!--검색 자동완성-->
+        <div id="infowindow-content">
+          <img src="" width="16" height="16" id="place-icon" />
+          <span id="place-name" class="title"></span><br />
+          <span id="place-address"></span>
+        </div>
+        <!--검색 자동완성-->
+
+        <div id="bottom-navi">
+          <div id="bottom-menu">
+            <div class="bottom-menu-btn"><!--<img>--><p>탐색</p></div>
+            <div class="bottom-menu-btn"><!--<img>--><p>출퇴근</p></div>
+            <div class="bottom-menu-btn"><!--<img>--><p>저장됨</p></div>
+            <div class="bottom-menu-btn"><!--<img>--><p>참여</p></div>
+            <div class="bottom-menu-btn"><!--<img>--><p>업데이트</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-div">
+
+      </div>
+
+      <div id="result-div">
+        <div class="result-img"></div>
+        <div class="result-title">덴마바시</div>
+        <div class="result-address">일본, 〒540-0012 大阪府大阪市中央区谷町１丁目２</div>
+        <div class="result-btn">
+          <div class="navi-btn rebtn"><img src='img/directions-black-18dp.svg'>경로</div>
+          <div class="bookmark-btn rebtn"><img src='img/bookmark_border-black-18dp.svg'>저장</div>
+          <div class="share-btn rebtn"><img src='img/share-black-18dp.svg'>공유</div>
+        </div>
+      </div>
+
+      <div id="transit-div">
+        <div class="trnasit-map">
+          <div class="maps-ex">
+            <img src="img/maps_ex.jpg">
+          </div>
+          <a class="btselect"><img src="img/arrow_back-black-18dp.svg"></a>
+        </div>
+        <div class="transit-top">
+          <a class="btresult"><img src="img/arrow_back-black-18dp.svg"></a>
+          <div class="transit-fromto">
+            <div class="fromto-icon"></div>
+            <div class="transit-from">
+              <!-- <img> -->
+              <input id="from-input" class="transit-input" type="text" placeholder="기타구 우메다">
+            </div>
+            <div class="transit-to">
+              <!-- <img> -->
+              <input id="to-input" class="transit-input" type="text" placeholder="덴마바시">
+            </div>
+          </div>
+          <div class="sel-transit">
+            <ul>
+              <li><p>자차</p>12분</li>
+              <li class="sel-tran-sel"><p>지하철</p>11분</li>
+              <li><p>도보</p>33분</li>
+              <li><p>택시</p>7분</li>
+              <li><p>자전거</p>12분</li>
+            </ul>
+          </div>
+          <div class="sel-radio"></div>
+        </div>
+        <div class="transit-con">
+          <div class="transit-list">
+            <div class="list1">
+              <p>추천 경로</p>
+              <ul>
+                <li>
+                  <div class="list1-li">
+                    <!-- <img> -->
+                    <div class="transit-title">
+                      <div class="subway-line">
+                        <p>도보 6분</p>
+                        <p class="fromtoarrow">></p>
+                        <p>다니마치선</p>
+                      </div>
+                      <p class="subway-time">오후 7:03 ~ 오후 7:14</p>
+                    </div>
+                    <div class="transit-distance">2.6km</div>
+                    <div class="transit-time">11분</div>
+                    <div class="transit-price">JP¥180</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="list2">
+              <p>지하철 경로 더보기</p>
+              <ul>
+                <li>
+                  <div class="list2-li">
+                    <div class="list1-li">
+                      <img> 
+                      <div class="transit-title">
+                        ㅁㅁㅁㅁ 경유
+                        <p>오후 6:02 ~ 오후 6:23</p>
+                      </div>
+                      <div class="transit-distance">2.6km</div>
+                      <div class="transit-time">11분</div>
+                  </div>
+                </li>
+              </ul>
+            </div> -->
+
+            
+          </div>
+          <div class="transit-navi">
+            <div class="navi-top">
+              <div class="navi-line">
+                <p>도보 6분</p>
+                <p class="fromtoarrow">></p>
+                <p>다니마치선</p>
+              </div>
+            </div>
+            <div class="navi-con">
+              
+            </div>
+          </div>
+
+        </div>
+        <div class="transit-bottom">
+          <ul>
+            <li class="transit-bottom-now">오후 7:00&nbsp;&nbsp;&nbsp;·</li>
+            <li class="transit-bottom-time">11분</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    
+    <!-- FOOTER END -->
+
+    <!-- SCRIPT START -->
+    <!-- Google map API-->
+    <script type="text/javascript" src="./js/maps.js"></script>
+    <!-- Google map API-->
+    <!-- 
+    <script type="text/javascript" src="./js/aboutSlider.js"></script>
+    <script type="text/javascript" src="./js/noteSlider.js"></script>
+    -->
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/jqueryScript.js"></script>
+    <!-- SCRIPT END -->
+</body>
+</html>
