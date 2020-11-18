@@ -1,0 +1,39 @@
+/* MOBILE */
+@media screen and (max-width: 767px){
+    body {width: 100%; min-width: 320px; background-color:#000; overflow: hidden;}
+
+    .header {width: 100%;}
+
+    .content {display: block; position: absolute; left: 0; width: 100%; height: 100%;}
+
+    .scr {display: block; position: absolute; width: 100%; height: 100%; }
+
+    .scr1 {background-color: #fff;}
+    .scr1-main {display: block; width: 100%; height: 100%;}
+    .scr1-box {overflow-y: auto; display: block; width:76%; height: 100%; margin-left: 12%; margin-right: 12%;}
+    .scr1-box {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .scr1-box::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+    
+    h1 {font-size: 1.8em; font-weight: 700; margin-top: 20px; margin-bottom: 20px;}
+    .scr1-script {display: block; width: 100%;}
+    .scr1-know {display: block; width: 100%; padding-bottom: 120px; margin-top: 20px;}
+    .scr1-know h2 {font-size: 20px; border-bottom: 2px solid #000; }
+    .scr1-know p {margin-top: 6px;}
+    .scr1-know img {display: block; width: calc(100% - 2px); margin-top: 20px; border: 1px solid #000;}
+
+    .scr1-next {display: block; position: relative; width: calc(100% - 4px); height: 40px; line-height: 40px; text-align: center; border: 2px solid #000; margin-bottom: 20px;}
+
+
+    .scr2 {background-color: #fff; left: 100%;}
+    .scr3 {background-color: #fff; left: 200%;}
+
+    .prev {display: block; position: absolute; width:calc(46% - 4px); height: 40px; left: 3%; bottom: 0; text-align: center; line-height: 40px; background-color: #fff; border: 2px solid #000; margin-bottom: 20px;}
+    .next {display: block; position: absolute; width:calc(46% - 4px); height: 40px; right: 3%; bottom: 0; text-align: center; line-height: 40px; background-color: #fff; border: 2px solid #000; margin-bottom: 20px;}
+
+    .footer {width: 100%;}
+}
