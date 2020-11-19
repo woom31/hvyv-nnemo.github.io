@@ -17,10 +17,10 @@
     .scr2 iframe {width: 100%; height: 100%;}
 
     .scr3 {display: block; width: 100%; height: 100%; background-color: #fff; position: absolute; top: 0; left: 200%;}
-    .scr3 iframe {width: 100%; height: 100%;}
+    .scr3 iframe {width: 100%; height: 100%; background-color: #000;}
 
 
-    
+
     .footer {width: 100%; height: 62px; position: fixed; bottom: 0; left: 0; border-top: 2px solid #eeeeee;}
     .footer-menu {display: block; width: 100%; height: 100%;}
     .menu-btn {display: block; width: calc(25% - 2px); height: 100%; position: relative; float: left; text-align: center; padding-top:10px; border-right: 2px solid #dddddd; font-size: 14px; background-color: #efefef; }
