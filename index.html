@@ -1,16 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>지도 앱 :: 지하철 승차권 플로우</title>
+    <title>구글 지도 : 지하철 승차권 발급 프로젝트</title>
     <!-- 파비콘 -->
-    <!--<link href="./img/favicon.ico" rel="shortcut icon">-->
+    <!-- <link href="./img/favicon.ico" rel="shortcut icon"> -->
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/index_d.css">      
+    <link rel="stylesheet" href="./css/index_d.css">    
+    <!-- <link rel="stylesheet" href="./css/index_v.css">    
+    <link rel="stylesheet" href="./css/index_h.css">     -->    
+    <link rel="stylesheet" href="./css/index_m.css">
     <!-- Jquery -->
     <script type="text/javascript" src="./js/libs/jquery.min.js"></script>
     <script type="text/javascript" src="./js/libs/jquery-ui.min.js"></script>
@@ -26,92 +30,54 @@
     
     <!-- CONTENT START -->
     <div class="content">
-        <div class="app_screen">
-            <div class="app_base">
-                <div class="base">
-                    <img src="img/base.jpg" class="base_img">
+        <div class="scr-main">
+            <div class="scr1">
+                <div class="scr1-box">
+                    <h1>
+                        해외여행 시 구글 지도 앱을 통한<br/>
+                        지하철 승차권 발급 프로젝트<br/>
+                        사용자 편의성 테스트
+                    </h1>
+                    <h2>상황 설명</h2>
+                    <p>
+                        <span>
+                        현위치 : 히가시우메다 역<br/>
+                        목적지 : 오사카성 (덴마바시 역)</span><br/>
+                        <br/>
+                        오사카성(덴마바시 역)으로 가는 티켓을 발권해주세요.
+                        </br/></br/>
+                        기존 발매기와 QR코드 승차권 2가지를 체험하신 후 설문에 참여해주세요.
+                    </p>
                 </div>
-                <div class="main_base">
-                    <img src="img/1.jpg" class="main_img">
-                    <a class="main_search_input" id="btn1"></a>
-                </div>
-                <div class="search_base">
-                    <div class="search_top">
-                        <img src="img/2_search.png" class="search_top_img">
-                        <a class="back_btn" id="gotomain"></a>
-                        <a class="search_search_input" id="btn2"></a>
-                    </div>
-                    <div class="search_list_div">
-                        <div class="search_list">
-                            <img src="img/2_list.png" class="search_list_img">
-                            <a class="search_sel_btn" id="btn3"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="result_base">
-                    <div class="search_result">
-                        <img src="img/3.jpg" class="result_img">
-                        <a class="back_btn" id="gotosearch"></a>
-                        <a class="result_sel_btn" id="btn4"></a>
-                    </div>
-                </div>
-                <div class="result_map_base">
-                    <div class="result_map">
-                        <img src="img/4.jpg" class="result_map_img">
-                        <a class="back_btn" id="gotoresult"></a>
-                        <a class="result_map_sel_btn" id="btn5"></a>
-                    </div>
-                </div>
-                <div class="navi_base">
-                    <div class="navi_top">
-                        <img src="img/5_main.png" class="navi_top_img">
-                        <a class="back_btn" id="gotoresmap"></a>
-                    </div>
-                    <div class="navi_list">
-                        <img src="img/5_navi.png" class="navi_list_img">
-                        <a class="navi_sel_btn" id="btn6"></a>
-                    </div>
-                </div>
-                <div class="detail_base">
-                    <div class="detail_top">
-                        <img src="img/6_maps.jpg" class="detail_top_img">
-                        <a class="back_btn" id="gotonavi"></a>
-                    </div>
-                    <div class="detail_list">
-                        <img src="img/6_bottom.png" class="detail_list_img">
-                        <a class="detail_hide_btn"></a>
-                        <a class="gotopay_btn">교통카드 결제</a>
-                    </div>
-                    <div class="detail_footer">
-                        <img src="img/6_footer.png" class="detail_footer_img">
-                    </div>
-                </div>
-
-                <div class="paypopup_base">
-                    <div class="blackout"></div>
-                    <div class="paypopup">
-                        <img src="img/paypopup.png" class="paypopup_img">
-                        <a href="pay.html" class="realgotopay"></a>
-                        <a class="gotodetail"></a>
-                    </div>
-                </div>
-
-                <div class="white_bar"><img src="img/white_bar.png" class="top_bar"></div>
+            </div>
+            <div class="scr2">
+                <iframe src="https://xd.adobe.com/embed/37b5fde0-87b7-44e1-a5c2-7785adcdc5ec-62e6/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="scr3">
+                <iframe src="https://xd.adobe.com/embed/21f74987-5a64-447a-9360-050201363889-74a4/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
-
-        
     </div>
     <!-- CONTENT END -->
 
     <!-- FOOTER START -->
     <div class="footer">
-        
+        <div class="footer-menu">
+            <a class="menu-btn scr1btn btnsel">상황 설명</a>
+            <a class="menu-btn scr2btn">기존 발매기<br/>체험하기</a>
+            <a class="menu-btn scr3btn">QR코드 승차권<br/>체험하기</a>
+            <a class="menu-btn scr4btn" href="https://forms.gle/hvCDgWWvmx2CS6St9" target="_blank">설문<br/>참여하기</a>
+        </div>
     </div>
     <!-- FOOTER END -->
 
     <!-- SCRIPT START -->
+    <!-- 
+    <script type="text/javascript" src="./js/aboutSlider.js"></script>
+    <script type="text/javascript" src="./js/noteSlider.js"></script>
+    -->
     <script type="text/javascript" src="./js/script.js"></script>
+
     <!-- SCRIPT END -->
 </body>
 </html>

@@ -1,82 +1,35 @@
 $(document).ready(function(){
-    $('#btn1').on('click', function(){
-        $('.search_base').css("z-index", "11");
-        $('.search_top').css("top", "0");
-        $('.search_list_div').stop().animate({'bottom':'0'}, 200);
-    });
 
-    $('#gotomain').on('click', function(){
-        $('.search_top').css("top", "-10%");
-        $('.search_list_div').stop().animate({'bottom':'-90%'}, 300).queue(function() {
-            $('.search_base').css("z-index", "9");
-        });
-        
-    });
-
-    $('#btn2').on('click', function(){
-        $('.result_base').css("z-index", "12");
-    });
+    // $('.scr1-next').on('click', function(){
+    //     $('.content').stop().animate({'left':'-100%'});
+    // })
   
-    $('#btn3').on('click', function(){
-        $('.result_base').css("z-index", "12");
-        $('.result_map_base').css("z-index", "13");
-    });
+    // $('.scr2-prev').on('click', function(){
+    //     $('.content').stop().animate({'left':'0'});
+    // })
 
-    $('#btn4').on('click', function(){
-        $('.result_map_base').css("z-index", "13");
-    });
+    // $('.scr2-next').on('click', function(){
+    //     $('.content').stop().animate({'left':'-200%'});
+    // })
 
-    $('#gotosearch').on('click', function(){
-        $('.result_base').css("z-index", "8");
-    });
+    // $('.scr3-prev').on('click', function(){
+    //     $('.content').stop().animate({'left':'-100%'});
+    // })
 
-    $('#gotoresult').on('click', function(){
-        $('.result_map_base').css("z-index", "7");
-    });
 
-    $('#btn5').on('click', function(){
-        $('.navi_base').css("z-index", "14");
-        $('.navi_top').css("top", "0");
-        $('.navi_list').stop().animate({'bottom':'0'}, 200);
-    });
-
-    $('#gotoresmap').on('click', function(){
-        $('.navi_top').css("top", "33%");
-        $('.navi_list').stop().animate({'bottom':'-67%'}, 300).queue(function() {
-            $('.navi_base').css("z-index", "6");
-        });
-    });
-
-    $('#btn6').on('click', function(){
-        $('.detail_base').css("z-index", "15");
-        $('.detail_list').stop().animate({'bottom':'0'}, 200);
-    });
-
-    var hidden = false;
-
-    $('.detail_hide_btn').on('click', function(){
-        if(hidden == false){
-            $('.detail_list').stop().animate({'bottom':'-58%'}, 200);
-            hidden = true;
-        } else if(hidden == true){
-            $('.detail_list').stop().animate({'bottom':'0'}, 200);
-            hidden = false;
-        };
+    $('.scr1btn').on('click', function(){
+        $('.scr-main').stop().animate({'left':'0'});
+    })
+    $('.scr2btn').on('click', function(){
+        $('.scr-main').stop().animate({'left':'-100%'});
+    })
+    $('.scr3btn').on('click', function(){
+        $('.scr-main').stop().animate({'left':'-200%'});
     })
 
-    $('#gotonavi').on('click', function(){
-        $('.detail_base').css("z-index", "5");
-        $('.detail_list').stop().animate({'bottom':'-58%'}, 200);
-    });
+    $('.menu-btn').on('click', function(){
+        $('.menu-btn').removeClass('btnsel');
+        $(this).addClass('btnsel');
+    })
 
-    $('.gotopay_btn').on('click', function(){
-        $('.paypopup_base').css("z-index", "16");
-        
-    });
-
-    $('.gotodetail').on('click', function(){
-        $('.paypopup_base').css("z-index", "4");
-        
-    });
-
-});
+}); 
