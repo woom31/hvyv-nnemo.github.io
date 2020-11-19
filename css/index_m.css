@@ -1,6 +1,6 @@
 /* MOBILE */
 @media screen and (max-width: 767px){
-    body {width: 100%; min-width: 320px; background-color:#fff; overflow: hidden;}
+    body {width: 100%; min-width: 320px; height: 100vh; background-color:#fff; overflow: hidden;}
 
     .header {width: 100%;}
 
