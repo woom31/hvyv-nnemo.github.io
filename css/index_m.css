@@ -16,7 +16,7 @@
     .scr2 iframe {width: 100%; height: 100%;}
 
     .scr3 {display: block; width: 100%; height: 100%; background-color: #fff; position: absolute; top: 0; left: 200%;}
-    .scr3 iframe {width: 100%; height: calc(100vh - 62px);}
+    .scr3 iframe {width: 90%; height: 100%; margin-left: 5%; margin-right: 5%;}
 
 
 
