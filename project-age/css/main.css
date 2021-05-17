@@ -1,0 +1,71 @@
+#logo{
+    display: inline;
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 9999;
+}
+#main {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#drag-area {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* position:absolute; */
+}
+#menu-area {
+    display: block;
+    width: 200%;
+    height: 200%;
+    background-color: #9ff;
+    cursor: grab;
+}
+.genre {
+    position:relative;
+    cursor: pointer;
+}
+#paint {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+#enter-btn {
+    display: block;
+    width: 118px;
+    height: 54px;
+    line-height: 56px;
+    position: absolute;
+    border: 1px solid #000;
+    text-align: center;
+    bottom: 10%;
+    left: 40%;
+    cursor: pointer;
+
+}
+#draw-btn {
+    display: block;
+    width: 118px;
+    height: 54px;
+    line-height: 56px;
+    position: absolute;
+    border: 1px solid #000;
+    text-align: center;
+    bottom: 10%;
+    right: 40%;
+    cursor: pointer;
+
+}
+#jsCanvas {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
